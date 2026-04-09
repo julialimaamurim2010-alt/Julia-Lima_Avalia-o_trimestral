@@ -1,0 +1,80 @@
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Nome do herói
+        string nome = "Luna";
+
+        // =====================
+        // Ataque Total (Soma)
+        // =====================
+        int ataqueBase = 50;
+        int bonusArma = 20;
+        int ataqueTotal = ataqueBase + bonusArma; // 
+
+        // =====================
+        // Dano no inimigo (Subtração)
+        // =====================
+        double vidaInimigo = 150.5;
+        double dano = 50.5;
+        double vidaRestante = vidaInimigo - dano; // 
+
+        // =====================
+        // Moedas (Multiplicação)
+        // =====================
+        float moedas = 30.5f;
+        var moedasFinais = moedas * 2; // 
+
+        // =====================
+        //  Experiência (Divisão)
+        // =====================
+        long xpTotal = 20000;
+        long mediaXp = xpTotal / 2; // 
+
+        // =====================
+        // Validação
+        // =====================
+        bool entendiMateria = true;
+
+        // =====================
+        // HISTÓRIA NO CONSOLE
+        // =====================
+
+        Console.WriteLine("===== A GRANDE BATALHA =====");
+        Console.WriteLine("A heroína " + nome + " entrou na caverna sombria...");
+        Console.WriteLine();
+
+        // SOMA
+        Console.WriteLine("Ela tinha " + ataqueBase + " de ataque base.");
+        Console.WriteLine("Sua arma mágica dava mais " + bonusArma + " de bônus.");
+        Console.WriteLine("Então foi feito um aumento:");
+        Console.WriteLine(ataqueBase + " + " + bonusArma + " = " + ataqueTotal);
+        Console.WriteLine("Ataque total de Luna: " + ataqueTotal);
+        Console.WriteLine();
+
+        // SUBTRAÇÃO
+        Console.WriteLine("O inimigo apareceu com " + vidaInimigo + " de vida.");
+        Console.WriteLine("Luna atacou e causou " + dano + " de dano!");
+        Console.WriteLine("Aconteceu uma diminuição de:");
+        Console.WriteLine(vidaInimigo + " - " + dano + " = " + vidaRestante);
+        Console.WriteLine("Vida restante do inimigo: " + vidaRestante);
+        Console.WriteLine();
+
+        // MULTIPLICAÇÃO
+        Console.WriteLine("Após vencer, Luna tinha " + moedas + " moedas.");
+        Console.WriteLine("Ela recebeu um bônus que dobrou suas moedas!");
+        Console.WriteLine(moedas + " x 2 = " + moedasFinais);
+        Console.WriteLine("Total de moedas agora: " + moedasFinais);
+        Console.WriteLine();
+
+        // DIVISÃO
+        Console.WriteLine("Luna ganhou " + xpTotal + " pontos de experiência.");
+        Console.WriteLine("Para saber a média por nível, foi feita uma divisão (/):");
+        Console.WriteLine(xpTotal + " / 2 = " + mediaXp);
+        Console.WriteLine("Média de XP por nível: " + mediaXp);
+
+        Console.WriteLine("===== FIM DA AVENTURA =====");
+    }
+}
